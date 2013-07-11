@@ -9,7 +9,7 @@ app.get('/', function(request, response)
   var buf;
   buf=fs.readFileSync("index.html");
 
-  response.send(buf.toString);
+  response.send(buf.toString());
 });
 
 var port = process.env.PORT || 5000;
